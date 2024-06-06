@@ -10,11 +10,11 @@ const Response: React.FC = () => {
 
   return (
     <div className="p-4 border border-gray-300 rounded">
-      <h2 className="text-2xl font-bold mb-4">Response</h2>
+      <h2 className="text-xl sm:text-2xl font-bold mb-4">Response</h2>
       <div className="mb-2 flex gap-[20px]">
-        <span className="font-semibold">Status Code:</span> {status.code}
-        <span className="font-semibold">Time:</span> {status.time} ms
-        <span className="font-semibold">Size:</span> {status.size}
+        <span className="text-xs sm:text-sm md:text-base font-semibold">Status Code:</span> <span className='text-xs sm:text-sm md:text-base'>{status.code}</span>
+        <span className="text-xs sm:text-sm md:text-base font-semibold">Time:</span> <span className='text-xs sm:text-sm md:text-base'>{status.time} ms</span>
+        <span className="text-xs sm:text-sm md:text-base font-semibold">Size:</span> <span className='text-xs sm:text-sm md:text-base'>{status.size}</span>
       </div>
     </div>
   );

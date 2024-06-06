@@ -18,7 +18,7 @@ const Body: React.FC<BodyProps> = ({ data = {} }) => {
 
   return (
     <div className="p-4 border border-gray-300 rounded bg-white">
-      <h2 className="text-xl font-bold mb-4">Body</h2>
+      <h2 className="text-base sm:text-xl md:text-2xl font-bold mb-4">Body</h2>
         <ReactJson
           src={data}
           theme="monokai"

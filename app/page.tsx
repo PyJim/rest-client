@@ -6,10 +6,10 @@ import ResponseTab from "@/components/ResponseTab";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-24">
+    <main className="flex min-h-screen flex-col py-24 px-4 sm:px-10 md:px-24 text-xs sm:text-sm md:text-base">
       <RequestBar/>
       <TabNavigator/>
-      <Response statusCode={200} time="150ms" size="1.5KB" />
+      <Response />
       <ResponseTab/>
     </main>
   );

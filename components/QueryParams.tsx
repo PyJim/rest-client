@@ -52,20 +52,20 @@ const QueryParams: React.FC = () => {
   return (
     <div>
       {params.map((param, index) => (
-        <div key={index} className="flex items-center mb-2">
+        <div key={index} className="flex flex-col sm:flex-row items-start mb-2">
           <input
             type="text"
             placeholder="Key"
             value={param.key}
             onChange={(e) => handleChange(index, 'key', e.target.value)}
-            className="border border-gray-300 p-2 rounded mr-2"
+            className="border border-gray-300 p-2 rounded mr-2 mb-1 w-full sm:w-auto"
           />
           <input
             type="text"
             placeholder="Value"
             value={param.value}
             onChange={(e) => handleChange(index, 'value', e.target.value)}
-            className="border border-gray-300 p-2 rounded mr-2"
+            className="border border-gray-300 p-2 rounded mr-2 mb-1 w-full sm:w-auto"
           />
           <button
             onClick={() => handleRemove(index)}
@@ -77,7 +77,7 @@ const QueryParams: React.FC = () => {
       ))}
       <button
         onClick={handleAdd}
-        className="bg-blue-500 text-white py-2 px-4 rounded"
+        className="bg-blue-500 text-white py-2 px-4 rounded my-3 sm:my-0"
       >
         Add
       </button>

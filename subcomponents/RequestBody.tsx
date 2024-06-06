@@ -17,7 +17,7 @@ const RequestBody: React.FC = () => {
 
   return (
     <div className="p-4 border border-gray-300 rounded bg-white">
-      <h2 className="text-xl font-bold mb-4">Request Body</h2>
+      <h2 className="text-s sm:text-base md:text-xl font-bold mb-4">Request Body</h2>
       <ReactJson
         src={JSON.parse(jsonText)}
         theme="monokai"

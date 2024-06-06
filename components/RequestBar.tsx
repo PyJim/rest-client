@@ -74,7 +74,7 @@ const RequestBar: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className="input-group mb-4">
       <select
-        className="form-select flex-grow-0 w-auto"
+        className="form-select flex-grow-0 w-auto text-xs sm:text-sm md:text-base"
         value={requestMethod}
         onChange={(e) => setRequestMethod(e.target.value)}
       >
@@ -86,13 +86,13 @@ const RequestBar: React.FC = () => {
       </select>
       <input
         required
-        className="form-control"
+        className="form-control text-xs sm:text-sm md:text-base"
         type="url"
         placeholder="https://example.com/"
         value={requestUrl}
         onChange={handleUrlChange}
       />
-      <button type="submit" className="btn btn-primary">Send</button>
+      <button type="submit" className="btn btn-primary text-xs sm:text-sm md:text-base">Send</button>
     </form>
   );
 };
